@@ -1,0 +1,19 @@
+input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 16px;
+  outline: none;
+  margin-top: 2rem;
+  background-color: white;
+}
+
+input:focus {
+  border-color: #0099ff;
+}
+
+button{
+  margin-top: 2rem;
+  height: 40px;
+  width: 20%;
+}
