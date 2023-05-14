@@ -2,14 +2,12 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/database';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDSm99N3YtLuA8kIn1FnhG2n8miWIUmFQA",
-  authDomain: "emailduplicatio-hr-project.firebaseapp.com",
-  databaseURL: "https://emailduplicatio-hr-project-default-rtdb.firebaseio.com",
-  projectId: "emailduplicatio-hr-project",
-  storageBucket: "emailduplicatio-hr-project.appspot.com",
-  messagingSenderId: "381617630773",
-  appId: "1:381617630773:web:9303028574bd77b1070b7c"
-  // Add your Firebase configuration here
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
 };
 
 // Initialize Firebase
